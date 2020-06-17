@@ -1,0 +1,46 @@
+#Using OOPS CONCEPT OF CLASS,OBJECT AND METHOD 
+
+class computer:
+    def __init__(self,name,price,model):
+        self.name=name
+        self.price=price
+        self.model=model
+        
+    def storage(self):
+        print("125GB")
+
+    def backup(self):
+        print("Back up all data every one hour")
+        
+class mobile_device:
+    def __init__(self,product_id,model,price,color):
+        self.product_id=product_id
+        self.model=model
+        self.price=price
+        self.color=color
+    
+    def network(self):
+        print("The network is fast")
+    def memory(self):
+        print("The RAM is 8GB")
+        
+    
+
+#creating an instance
+num=computer("Apple",1200,"XL")
+kit_01=mobile_device("macbook_pro","XL10",1800,"silver")
+
+#Creating an interface
+print(num.name)
+print(num.price)
+print(num.model)
+num.storage()
+num.backup()
+print(kit_01.product_id)
+print(kit_01.model)
+print(kit_01.price)
+print(kit_01.color)
+kit_01.network()
+kit_01.memory()
+
+
